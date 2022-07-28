@@ -14,12 +14,12 @@ function playGame () {
 			(playerChoice === `paper` && compChoice === `rock`) || 
 			(playerChoice === `scissors` && compChoice === `paper`)) {
 
-				console.log(`you win`);
+				console.log(`${playerChoice.toUpperCase()} beats ${compChoice}, you win`);
 
 	} else if (playerChoice === compChoice ) {
-		console.log(`it's a draw`);
+		console.log(`${playerChoice} and ${compChoice} are the same, it's a draw`);
 	} else {
-		console.log(`you lose`);
+		console.log(`${compChoice.toUpperCase()} beats ${playerChoice} - you lose, loser`);
 	}
 };
 
