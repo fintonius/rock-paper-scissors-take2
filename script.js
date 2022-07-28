@@ -4,13 +4,8 @@ function getComputerChoice () { //randomly selects 1 of 3 options
 }
 
 
-
-// playGame();
-
 function game() {
 
-	// need a loop for 5 rounds, 2 vars to keep score
-	// return a win||lose point per `if` scenario that can be stored in score vars
 	let playerScore = 0;
 	let compScore = 0;
 	let round = 5;
