@@ -27,18 +27,24 @@ function game() {
 				(playerChoice === `scissors` && compChoice === `paper`)) {
 	
 					console.log(`${playerChoice.toUpperCase()} beats ${compChoice}, you win`);
-	
+					return playerScore += 1;
+					
 		} else if (playerChoice === compChoice ) {
 			console.log(`${playerChoice} and ${compChoice} are the same, it's a draw`);
 		} else {
 			console.log(`${compChoice.toUpperCase()} beats ${playerChoice} - you lose, loser`);
+			return compScore += 1;
 		}
 	};
 
 	for (let i = 1; i <= round; i++) {
 		playGame();
+		console.log(playerScore);
+		console.log(compScore);
 	};
 
 };
 
 game();
+
+	
