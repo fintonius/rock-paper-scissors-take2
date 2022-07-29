@@ -1,9 +1,3 @@
-function getComputerChoice () { //randomly selects 1 of 3 options
-	const choices = [`rock`, `paper`, `scissors`];
-	return choices[Math.floor(Math.random() * 3)];
-}
-
-
 function game() {
 
 	let playerScore = 0;
@@ -11,11 +5,9 @@ function game() {
 	let round = 5;
 
 	function playGame () {
-
-		let compChoice = getComputerChoice();
+		const choices = [`rock`, `paper`, `scissors`];
+		let compChoice = choices[Math.floor(Math.random() * 3)];
 		let playerChoice = prompt(`Player, pick your weapon: rock, paper or scissors`, ``).toLowerCase();
-	
-		console.log(compChoice, playerChoice);
 	
 		if ((playerChoice === `rock` && compChoice === `scissors`) ||
 				(playerChoice === `paper` && compChoice === `rock`) || 
