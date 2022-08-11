@@ -1,3 +1,6 @@
+let rockBtn = document.getElementById('rock');
+rockBtn.addEventListener('click', () => console.log('rock'));
+
 function game() {
 
 	let playerScore = 0;
@@ -24,25 +27,26 @@ function game() {
 		}
 	};
 
-	for (let i = 1; i <= round; i++) {
-		playGame();
-		console.log(playerScore);
-		console.log(compScore);
+	//To play up to the round limit
+// 	for (let i = 1; i <= round; i++) { 
+// 		playGame();
+// 		console.log(playerScore);
+// 		console.log(compScore);
 
-		if (i === round) {
-		gameOver()
-	};
+// 		if (i === round) {
+// 		gameOver()
+// 	};
 
-	function gameOver () {
-		if (playerScore > compScore) {
-			console.log(`Your score is ${playerScore} vs. the comp's score of ${compScore}, you win ye lucky prick`)
-		} else if (playerScore < compScore) {
-			console.log(`The comp has kicked your ass ${compScore} to ${playerScore}! You lose, chump`); 
-		} else {
-			console.log(`it's a draw. BOOOOOOOOOOOORING`);
-		};
-	};
-};
+// 	function gameOver () {
+// 		if (playerScore > compScore) {
+// 			console.log(`Your score is ${playerScore} vs. the comp's score of ${compScore}, you win ye lucky prick`)
+// 		} else if (playerScore < compScore) {
+// 			console.log(`The comp has kicked your ass ${compScore} to ${playerScore}! You lose, chump`); 
+// 		} else {
+// 			console.log(`it's a draw. BOOOOOOOOOOOORING`);
+// 		};
+// 	};
+// };
 
 };
 
