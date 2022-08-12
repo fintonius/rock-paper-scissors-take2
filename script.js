@@ -28,12 +28,10 @@ function game() {
 
 	let compScore = 0;
 	let compPoints = document.getElementById('comp-score');
-	// let round = 5;
 
 	function playGame () {
 		const choices = [`rock`, `paper`, `scissors`];
 		let compChoice = choices[Math.floor(Math.random() * 3)];
-		// let playerChoice = prompt(`Player, pick your weapon: rock, paper or scissors`, ``).toLowerCase();
 
 		if (playerScore < 5 && compScore < 5) {
 	
@@ -58,31 +56,6 @@ function game() {
 					winner.textContent = `The comp has kicked your ass ${compScore} to ${playerScore}! You lose, chump`;
 				};
 	};
-
-	
-	
-
-	//To play up to the round limit
-// 	for (let i = 1; i <= round; i++) { 
-// 		playGame();
-// 		console.log(playerScore);
-// 		console.log(compScore);
-
-// 		if (i === round) {
-// 		gameOver()
-// 	};
-
-// 	function gameOver () {
-// 		if (playerScore > compScore) {
-// 			console.log(`Your score is ${playerScore} vs. the comp's score of ${compScore}, you win ye lucky prick`)
-// 		} else if (playerScore < compScore) {
-// 			console.log(`The comp has kicked your ass ${compScore} to ${playerScore}! You lose, chump`); 
-// 		} else {
-// 			console.log(`it's a draw. BOOOOOOOOOOOORING`);
-// 		};
-// 	};
-// };
-
 };
 
 game();
